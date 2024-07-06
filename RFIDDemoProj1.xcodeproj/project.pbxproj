@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432360372C3984F600AC5B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432360362C3984F600AC5B6A /* AppDelegate.swift */; };
+		4323603B2C3984F600AC5B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323603A2C3984F600AC5B6A /* ViewController.swift */; };
+		4323603E2C3984F600AC5B6A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4323603D2C3984F600AC5B6A /* Base */; };
+		432360412C3984F700AC5B6A /* RFIDDemoProj1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4323603F2C3984F600AC5B6A /* RFIDDemoProj1.xcdatamodeld */; };
+		432360432C3984F800AC5B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432360422C3984F800AC5B6A /* Assets.xcassets */; };
+		432360462C3984F800AC5B6A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 432360452C3984F800AC5B6A /* Base */; };
+		4323604E2C39863D00AC5B6A /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323604D2C39863D00AC5B6A /* UIExtension.swift */; };
+		432360502C39880A00AC5B6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323604F2C39880A00AC5B6A /* Constants.swift */; };
+		432360522C398E8F00AC5B6A /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432360512C398E8F00AC5B6A /* APIModel.swift */; };
+		432360542C3995AE00AC5B6A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432360532C3995AE00AC5B6A /* NetworkManager.swift */; };
+		D38687B1ECA3751DCB39B7D3 /* Pods_RFIDDemoProj1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01630B11B9E695DBFCA10ADB /* Pods_RFIDDemoProj1.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01630B11B9E695DBFCA10ADB /* Pods_RFIDDemoProj1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFIDDemoProj1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F206FB508C6C95FD07633FE /* Pods-RFIDDemoProj1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFIDDemoProj1.release.xcconfig"; path = "Target Support Files/Pods-RFIDDemoProj1/Pods-RFIDDemoProj1.release.xcconfig"; sourceTree = "<group>"; };
+		11FDA35932A11BCD42A9B2CC /* Pods-RFIDDemoProj1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFIDDemoProj1.debug.xcconfig"; path = "Target Support Files/Pods-RFIDDemoProj1/Pods-RFIDDemoProj1.debug.xcconfig"; sourceTree = "<group>"; };
+		432360332C3984F600AC5B6A /* RFIDDemoProj1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFIDDemoProj1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		432360362C3984F600AC5B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4323603A2C3984F600AC5B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4323603D2C3984F600AC5B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		432360402C3984F600AC5B6A /* RFIDDemoProj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RFIDDemoProj.xcdatamodel; sourceTree = "<group>"; };
+		432360422C3984F800AC5B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		432360452C3984F800AC5B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		432360472C3984F800AC5B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4323604D2C39863D00AC5B6A /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		4323604F2C39880A00AC5B6A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		432360512C398E8F00AC5B6A /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		432360532C3995AE00AC5B6A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		432360302C3984F600AC5B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38687B1ECA3751DCB39B7D3 /* Pods_RFIDDemoProj1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4323602A2C3984F600AC5B6A = {
+			isa = PBXGroup;
+			children = (
+				432360352C3984F600AC5B6A /* RFIDDemoProj1 */,
+				432360342C3984F600AC5B6A /* Products */,
+				6F72B8B721589C8D28388A1C /* Pods */,
+				5658FBFA7E1D7034BC296A35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		432360342C3984F600AC5B6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				432360332C3984F600AC5B6A /* RFIDDemoProj1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		432360352C3984F600AC5B6A /* RFIDDemoProj1 */ = {
+			isa = PBXGroup;
+			children = (
+				432360362C3984F600AC5B6A /* AppDelegate.swift */,
+				4323603A2C3984F600AC5B6A /* ViewController.swift */,
+				4323604F2C39880A00AC5B6A /* Constants.swift */,
+				4323603C2C3984F600AC5B6A /* Main.storyboard */,
+				432360422C3984F800AC5B6A /* Assets.xcassets */,
+				432360442C3984F800AC5B6A /* LaunchScreen.storyboard */,
+				4323604D2C39863D00AC5B6A /* UIExtension.swift */,
+				432360472C3984F800AC5B6A /* Info.plist */,
+				4323603F2C3984F600AC5B6A /* RFIDDemoProj1.xcdatamodeld */,
+				432360512C398E8F00AC5B6A /* APIModel.swift */,
+				432360532C3995AE00AC5B6A /* NetworkManager.swift */,
+			);
+			path = RFIDDemoProj1;
+			sourceTree = "<group>";
+		};
+		5658FBFA7E1D7034BC296A35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01630B11B9E695DBFCA10ADB /* Pods_RFIDDemoProj1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F72B8B721589C8D28388A1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11FDA35932A11BCD42A9B2CC /* Pods-RFIDDemoProj1.debug.xcconfig */,
+				0F206FB508C6C95FD07633FE /* Pods-RFIDDemoProj1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		432360322C3984F600AC5B6A /* RFIDDemoProj1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4323604A2C3984F800AC5B6A /* Build configuration list for PBXNativeTarget "RFIDDemoProj1" */;
+			buildPhases = (
+				CEFD881C802676F48BE90629 /* [CP] Check Pods Manifest.lock */,
+				4323602F2C3984F600AC5B6A /* Sources */,
+				432360302C3984F600AC5B6A /* Frameworks */,
+				432360312C3984F600AC5B6A /* Resources */,
+				E24669A251579FB196B81200 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFIDDemoProj1;
+			productName = RFIDDemoProj;
+			productReference = 432360332C3984F600AC5B6A /* RFIDDemoProj1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4323602B2C3984F600AC5B6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					432360322C3984F600AC5B6A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 4323602E2C3984F600AC5B6A /* Build configuration list for PBXProject "RFIDDemoProj1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4323602A2C3984F600AC5B6A;
+			productRefGroup = 432360342C3984F600AC5B6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				432360322C3984F600AC5B6A /* RFIDDemoProj1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		432360312C3984F600AC5B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432360432C3984F800AC5B6A /* Assets.xcassets in Resources */,
+				432360462C3984F800AC5B6A /* Base in Resources */,
+				4323603E2C3984F600AC5B6A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEFD881C802676F48BE90629 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RFIDDemoProj1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24669A251579FB196B81200 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RFIDDemoProj1/Pods-RFIDDemoProj1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RFIDDemoProj1/Pods-RFIDDemoProj1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RFIDDemoProj1/Pods-RFIDDemoProj1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4323602F2C3984F600AC5B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4323603B2C3984F600AC5B6A /* ViewController.swift in Sources */,
+				432360372C3984F600AC5B6A /* AppDelegate.swift in Sources */,
+				432360412C3984F700AC5B6A /* RFIDDemoProj1.xcdatamodeld in Sources */,
+				432360542C3995AE00AC5B6A /* NetworkManager.swift in Sources */,
+				4323604E2C39863D00AC5B6A /* UIExtension.swift in Sources */,
+				432360522C398E8F00AC5B6A /* APIModel.swift in Sources */,
+				432360502C39880A00AC5B6A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4323603C2C3984F600AC5B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4323603D2C3984F600AC5B6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		432360442C3984F800AC5B6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432360452C3984F800AC5B6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		432360482C3984F800AC5B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		432360492C3984F800AC5B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4323604B2C3984F800AC5B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FDA35932A11BCD42A9B2CC /* Pods-RFIDDemoProj1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RFIDDemoProj1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.RFIDDemoProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4323604C2C3984F800AC5B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F206FB508C6C95FD07633FE /* Pods-RFIDDemoProj1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RFIDDemoProj1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.RFIDDemoProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4323602E2C3984F600AC5B6A /* Build configuration list for PBXProject "RFIDDemoProj1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432360482C3984F800AC5B6A /* Debug */,
+				432360492C3984F800AC5B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4323604A2C3984F800AC5B6A /* Build configuration list for PBXNativeTarget "RFIDDemoProj1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4323604B2C3984F800AC5B6A /* Debug */,
+				4323604C2C3984F800AC5B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4323603F2C3984F600AC5B6A /* RFIDDemoProj1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				432360402C3984F600AC5B6A /* RFIDDemoProj.xcdatamodel */,
+			);
+			currentVersion = 432360402C3984F600AC5B6A /* RFIDDemoProj.xcdatamodel */;
+			path = RFIDDemoProj1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4323602B2C3984F600AC5B6A /* Project object */;
+}
