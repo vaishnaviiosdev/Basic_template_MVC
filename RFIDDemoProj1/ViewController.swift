@@ -64,5 +64,36 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: --- DATA LOAD FROM LOCAL JSON FILE
+/*func fetchDatafromJSON() {
+    if let batch = self.parseJSONFromFile(named: "shopping") {
+        for dict in batch.categories {
+            let newProduct = ProductTable(context: DB_Context)
+            newProduct.product_id = dict.id
+            newProduct.product_name = dict.name
+            newProduct.product_items = "\(dict.itemArr ?? [])"
+            COREDATA_MANAGER.savedata()
+        }
+        self.retrieveData()
+    }
+}
+
+//MARK: --- PARSING LOCAL JSON INTO JSONOBJECT
+func parseJSONFromFile(named fileName: String) -> dataModel? {
+    if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let json = try JSON(data: data)
+            return dataModel(fromJson: json)
+        } catch {
+            print("Error reading JSON file:", error.localizedDescription)
+            return nil
+        }
+    } else {
+        print("JSON file not found.")
+        return nil
+    }
+}*/
+
 
 
